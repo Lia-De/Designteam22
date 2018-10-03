@@ -1,0 +1,91 @@
+/* Style sheet for JET projektet */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header {}
+header h1 {
+  background-color: #3DBBCB;
+  min-width: 455px;
+  height: 100px;
+ }
+ header ul li {
+   display: inline;
+   list-style-type: none;
+   margin: 2em;
+   padding: 0;
+ }
+
+nav {
+    background-color: #1A1F3C;
+    dsplay: inline;
+  }
+main {
+  max-width: 800px;
+  background-color: #FFFFFF;
+  padding-left: 50px;
+
+}
+section {
+  clear: both;
+  border: solid 1px #1A1F3C;
+  position: relative;
+}
+#video {}
+#appen {
+  height: 500px;
+}
+#galleri {
+  height: 500px;
+}
+#spec{
+  height: 500px;
+}
+
+footer {
+  background-color: #3DBBCB;
+  width: 100%;
+}
+
+section h2 {
+  color: #1A1F3C;
+  text-align: justify;
+}
+
+#appMockup {
+}
+
+.Vblock1, .Vblock2, .Hblock1, .Hblock2 {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  overflow: hidden;
+}
+.Vblock1 {
+  top: 0;
+  left: 230px;
+
+}
+ .Vblock2 {
+   top: 250px;
+   left: 230px;
+
+ }
+.Hblock1  {
+  top: 0;
+  right: 0;
+
+}
+.Hblock2 {
+  top: 250px;
+  right: 0;
+
+}
+.App_Rubrik {
+  font-variant: small-caps;
+}
+.App_Text {
+  padding: 1em;
+  text-align: justify;
+}
