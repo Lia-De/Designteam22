@@ -1,46 +1,121 @@
 /* Style sheet for JET projektet */
 body {
-  background-color: #ffffff;
+  background-color: #BAAA9A;
   color: #000000;
 }
 
 header {}
 header h1 {
   background-color: #3DBBCB;
-  min-width: 455px;
+  width: 455px;
   height: 100px;
+  padding: 0;
+  margin: 0;
  }
+
  header ul li {
    display: inline;
    list-style-type: none;
-   margin: 2em;
-   padding: 0;
+   padding-right: 2em;
  }
 
 nav {
+
     background-color: #1A1F3C;
-    dsplay: inline;
   }
 main {
   max-width: 800px;
   background-color: #FFFFFF;
-  padding-left: 50px;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 section {
-  clear: both;
+  /*clear: both; */
   border: solid 1px #1A1F3C;
   position: relative;
 }
-#video {}
+/* -------------------------------------------------*/#video {
+  text-align: center;
+}
+/* -------------------------------------------------*/
+/** Kod för att styla element i panelen för APPEN  **/
 #appen {
-  height: 500px;
+  height: 470px;
 }
+#appMockup {
+}
+
+
+
+/* ---------------------------------------------------*/
+/** Kod för att styla element i panelen för GALLERI  **/
 #galleri {
-  height: 500px;
+  height: 450px;
 }
+#appBlurb {
+  width: 270px;
+  position: absolute;
+  top: 5px;
+  left: 230px;
+}
+#appImages{
+  border: solid 1px black; /* Ta BORT När bild finnes */
+  width: 280px;
+  height: 90%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+#galleriFig {
+  width: 380px;
+  height: 380px;
+  border: solid 1px black; /* Ta BORT När bild finnes */
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+.Vblock1, .Vblock2, .Hblock1, .Hblock2 {
+  position: absolute;
+  width: 185px;
+  height: 170px;
+  overflow: hidden;
+}
+.Vblock1 {
+  top: 2em;
+  left: 400px;
+}
+ .Vblock2 {
+   top: 14em;
+   left: 400px;
+ }
+.Hblock1  {
+  top: 2em;
+  right: 1em;
+}
+.Hblock2 {
+  top: 14em;
+  right: 1em;
+}
+
+.panel_Text {
+  padding-left: 1em;
+  text-align: justify;
+}
+
+/* ----------------------------------------------------------*/
+/** Kod för att styla element i panelen för SPECIFIKATIONER **/
 #spec{
-  height: 500px;
+  height: 300px;
+}
+.spec_panel {
+  float:left;
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.spec_Rubrik {
+  /* grafik? */
 }
 
 footer {
@@ -48,44 +123,10 @@ footer {
   width: 100%;
 }
 
-section h2 {
+section h3, section h2 {
   color: #1A1F3C;
+  background-color: #BAAA9A;
   text-align: justify;
-}
-
-#appMockup {
-}
-
-.Vblock1, .Vblock2, .Hblock1, .Hblock2 {
-  position: absolute;
-  width: 260px;
-  height: 200px;
-  overflow: hidden;
-}
-.Vblock1 {
-  top: 0;
-  left: 230px;
-
-}
- .Vblock2 {
-   top: 250px;
-   left: 230px;
-
- }
-.Hblock1  {
-  top: 0;
-  right: 0;
-
-}
-.Hblock2 {
-  top: 250px;
-  right: 0;
-
-}
-.App_Rubrik {
   font-variant: small-caps;
-}
-.App_Text {
-  padding: 1em;
-  text-align: justify;
+  margin: 0;
 }
