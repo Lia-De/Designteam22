@@ -1,28 +1,57 @@
 /* Style sheet for JET projektet */
 body {
-  background-color: #BAAA9A;
+  background-color: #FFF;
   color: #000000;
+  padding: 1em 0;
+  margin: 0;
 }
 
-header {}
+header {
+    background-color: #3DBBCB;
+    position: relative;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
 header h1 {
-  background-color: #3DBBCB;
-  width: 455px;
-  height: 100px;
+  width: 228px;
+  height: 60px;
   padding: 0;
   margin: 0;
+
  }
 
- header ul li {
-   display: inline;
-   list-style-type: none;
-   padding-right: 2em;
- }
-
-nav {
-
-    background-color: #1A1F3C;
+header nav {
+  position: absolute;
+  right: 0;
+  top: 0;
   }
+
+nav ul  {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+ nav ul li {
+   float: left;
+   margin-left: 1px;
+ }
+nav ul li a {
+  display: block;
+  text-align: center;
+  height: 60px;
+  width: 130px;
+  background-color: #1A1F3C;
+  color: #3DBBCB;
+  text-decoration: none;
+  line-height: 60px;
+  overflow: hidden;
+}
+nav ul li a:hover {
+  background-color: #3DBBCB;
+  color: #1A1F3C;
+}
+
 main {
   max-width: 800px;
   background-color: #FFFFFF;
@@ -40,7 +69,7 @@ section {
 /* -------------------------------------------------*/
 /** Kod för att styla element i panelen för APPEN  **/
 #appen {
-  height: 470px;
+  height: 500px;
 }
 #appMockup {
 }
@@ -55,7 +84,7 @@ section {
 #appBlurb {
   width: 270px;
   position: absolute;
-  top: 5px;
+  top: 2em;
   left: 230px;
 }
 #appImages{
@@ -63,7 +92,7 @@ section {
   width: 280px;
   height: 90%;
   position: absolute;
-  top: 5px;
+  top: 2em;
   right: 5px;
 }
 #galleriFig {
@@ -120,12 +149,39 @@ section {
 
 footer {
   background-color: #3DBBCB;
-  width: 100%;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #1A1F3C;
+  padding-bottom: 1em;
+}
+footer h2 {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  font-size: 4em;
+  margin-left: 1em;
+  font-family: "Courier New", monospace;
+}
+footer #kontakt {
+  text-align: center;
+  border: none;
+}
+#kontakt h3 {
+  text-align: center;
+}
+#kontakt a {
+  padding: 1em;
+  margin: 1em;
+  color: #1A1F3C;
+}
+#kontakt a:hover {
+  color: #3DBBCB;
+  background-color: #1A1F3C;
 }
 
 section h3, section h2 {
   color: #1A1F3C;
-  background-color: #BAAA9A;
   text-align: justify;
   font-variant: small-caps;
   margin: 0;
