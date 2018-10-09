@@ -4,6 +4,7 @@ body {
   color: #000000;
   padding: 1em 0;
   margin: 0;
+  font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 header {
@@ -57,13 +58,14 @@ main {
   background-color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
+
 }
 section {
-  /*clear: both; */
-  border: solid 1px #1A1F3C;
+
   position: relative;
 }
-/* -------------------------------------------------*/#video {
+/* -------------------------------------------------*/
+#video {
   text-align: center;
 }
 /* -------------------------------------------------*/
@@ -71,9 +73,18 @@ section {
 #appen {
   height: 500px;
 }
-#appMockup {
+#appMockup2 {
+  position: absolute;
+  top: 2em;
+  right: 5px;
 }
 
+#appBlurb {
+  width: 280px;
+  position: absolute;
+  top: 2em;
+  left: 230px;
+}
 
 
 /* ---------------------------------------------------*/
@@ -81,27 +92,13 @@ section {
 #galleri {
   height: 450px;
 }
-#appBlurb {
-  width: 270px;
-  position: absolute;
-  top: 2em;
-  left: 230px;
-}
-#appImages{
-  border: solid 1px black; /* Ta BORT När bild finnes */
-  width: 280px;
-  height: 90%;
-  position: absolute;
-  top: 2em;
-  right: 5px;
-}
+
 #galleriFig {
   width: 380px;
   height: 380px;
   border: solid 1px black; /* Ta BORT När bild finnes */
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
-  margin-top: 10px;
 }
 .Vblock1, .Vblock2, .Hblock1, .Hblock2 {
   position: absolute;
@@ -143,8 +140,12 @@ section {
   margin: 0;
   padding: 0;
 }
-.spec_Rubrik {
-  /* grafik? */
+.spec_panel p {
+  margin: 0;
+  padding: 0;
+}
+.spec_panel p:first-of-type {
+  margin-top: 1em;
 }
 
 footer {
@@ -185,4 +186,7 @@ section h3, section h2 {
   text-align: justify;
   font-variant: small-caps;
   margin: 0;
+}
+section h2 {
+  margin-left: 2em;
 }
