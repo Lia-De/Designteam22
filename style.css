@@ -1,137 +1,170 @@
 /* Style sheet for JET projektet */
+/* ------------------------------------------- */
+/* ----- Allmäna regler för sidan -------------*/
 body {
   background-color: #FFF;
   color: #000000;
   padding: 1em 0;
   margin: 0;
   font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+}
+section h3, section h2 {
+  color: #1A1F3C;
+  font-variant: small-caps;
+  margin: 1em 0;
+}
+section h2 {
+  margin-left: 2em;
+}
+section p {
+  line-height: 1.5em;
 }
 
+/* Sätt bredd för alla element på ett och samma ställe */
+header, main, footer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -------------------------------------------------*/
+/** Kod för att styla element i HEADER inkl NAV  **/
 header {
     background-color: #3DBBCB;
-    position: relative;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding-top: 4px;
 }
 header h1 {
   width: 228px;
   height: 60px;
   padding: 0;
-  margin: 0;
-
+  margin: 0 0 0 5em;
  }
 
-header nav {
+header nav { /* Fäst nav-baren i övre högra hörnet så den hamnar brevid logon */
   position: absolute;
   right: 0;
   top: 0;
   }
 
-nav ul  {
+nav ul  { /* ta bort punkterna i listan */
    list-style-type: none;
    padding: 0;
    margin: 0;
  }
- nav ul li {
+ nav ul li { /* Lägg alla listelement på en rad */
    float: left;
    margin-left: 1px;
  }
-nav ul li a {
+nav ul li a { /* Gör länkarna till klickbara lådor av rätt storlek, text i mitten */
   display: block;
+  line-height: 60px; /* lägger texten mitt i lådans höjd */
   text-align: center;
   height: 60px;
-  width: 130px;
+  width: 200px;
   background-color: #1A1F3C;
   color: #3DBBCB;
   text-decoration: none;
-  line-height: 60px;
   overflow: hidden;
 }
-nav ul li a:hover {
+nav ul li a:hover { /* Spegla färgerna för att markera vilken länk muspekaren är över */
   background-color: #3DBBCB;
   color: #1A1F3C;
+  border: solid 1px #1A1F3C;
 }
 
-main {
-  max-width: 800px;
+.sitenav { /* Inom-sidan navigering, ska ligga högst upp till höger i varje sektion */
+  position: absolute;
+  top: 4em;
+  right: 0;
+}
+.sitenav a:link {
+  text-decoration: none;
+  color: #1A1F3C;
+}
+.sitenav a:hover { /* märk ut länken med bakgrundsfärg när du hobrar */
+  color: #3DBBCB;
+  background-color: #1A1F3C;
+}
+
+main { /* Lägg allt innehåll mitt i webläsaren */
   background-color: #FFFFFF;
-  margin-left: auto;
-  margin-right: auto;
+
 
 }
-section {
-
+section { /* för att kunna flytta element inom sektioner med position:absolute  */
   position: relative;
+  padding-top: 70px;
 }
+
 /* -------------------------------------------------*/
+/** Kod för att styla element i panelen för VIDEO  **/
 #video {
   text-align: center;
+}
+
+#reklamVid {
+}
+
+#video h2 {
+  text-align: left;
 }
 /* -------------------------------------------------*/
 /** Kod för att styla element i panelen för APPEN  **/
 #appen {
-  height: 500px;
+  height: 550px;
+}
+#appMockup {
+position: absolute;
+top: 8em;
+left: 0;
 }
 #appMockup2 {
   position: absolute;
-  top: 2em;
-  right: 5px;
+  top: 8em;
+  right: 2em;
 }
 
 #appBlurb {
-  width: 280px;
+  width: 50%;
   position: absolute;
-  top: 2em;
-  left: 230px;
+  top: 8em;
+  left: 25%;
 }
 
 
 /* ---------------------------------------------------*/
 /** Kod för att styla element i panelen för GALLERI  **/
 #galleri {
-  height: 450px;
+  height: 500px;
 }
 
 #galleriFig {
-  width: 380px;
+  width: 65%;
   height: 380px;
   border: solid 1px black; /* Ta BORT När bild finnes */
   margin: 10px 0 0 0;
   padding: 0;
 }
-.Vblock1, .Vblock2, .Hblock1, .Hblock2 {
+#galleriText {
+  top: 8em;
+  right: 2em;
   position: absolute;
-  width: 185px;
-  height: 170px;
-  overflow: hidden;
-}
-.Vblock1 {
-  top: 2em;
-  left: 400px;
-}
- .Vblock2 {
-   top: 14em;
-   left: 400px;
- }
-.Hblock1  {
-  top: 2em;
-  right: 1em;
-}
-.Hblock2 {
-  top: 14em;
-  right: 1em;
+  width: 30%;
 }
 
 .panel_Text {
   padding-left: 1em;
-  text-align: justify;
 }
 
 /* ----------------------------------------------------------*/
 /** Kod för att styla element i panelen för SPECIFIKATIONER **/
 #spec{
-  height: 300px;
+  height: 450px;
 }
 .spec_panel {
   float:left;
@@ -148,28 +181,33 @@ section {
   margin-top: 1em;
 }
 
+/* ----------------------------------------------------------*/
+/** Kod för att styla element i footer **/
+
 footer {
   background-color: #3DBBCB;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
   color: #1A1F3C;
   padding-bottom: 1em;
+  position: relative;
+
 }
-footer h2 {
+footer #logo {
   position: absolute;
-  top: auto;
-  bottom: auto;
-  font-size: 4em;
-  margin-left: 1em;
-  font-family: "Courier New", monospace;
+  top: 70px;
+  left: 100px;
+}
+footer #logo a {
+  display: block;
+  width: 159px;
+  height: 150px;
 }
 footer #kontakt {
   text-align: center;
   border: none;
 }
 #kontakt h3 {
-  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
 }
 #kontakt a {
   padding: 1em;
@@ -179,14 +217,4 @@ footer #kontakt {
 #kontakt a:hover {
   color: #3DBBCB;
   background-color: #1A1F3C;
-}
-
-section h3, section h2 {
-  color: #1A1F3C;
-  text-align: justify;
-  font-variant: small-caps;
-  margin: 0;
-}
-section h2 {
-  margin-left: 2em;
 }
