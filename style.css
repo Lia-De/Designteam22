@@ -87,8 +87,8 @@ nav ul li a:hover { /* Spegla färgerna för att markera vilken länk muspekaren
   color: #1A1F3C;
 }
 .sitenav a:hover { /* märk ut länken med bakgrundsfärg när du hobrar */
-  color: #3DBBCB;
-  background-color: #1A1F3C;
+  color: #1A1F3C;
+  background-color: #BAAA9A;
 }
 
 main { /* Lägg allt innehåll mitt i webläsaren */
@@ -177,7 +177,7 @@ left: 0;
   margin: 0;
   padding: 0;
 }
-.spec_panel p:first-of-type {
+.spec_panel p:first-of-type { /* Gör plats mellan rubrik och början på specifikationerna */
   margin-top: 1em;
 }
 
