@@ -70,19 +70,23 @@ nav ul li a { /* Gör länkarna till klickbara lådor av rätt storlek, text i m
   color: #3DBBCB;
   text-decoration: none;
   overflow: hidden;
+  border: solid 1px #1A1F3C;
 }
 nav ul li a:hover { /* Spegla färgerna för att markera vilken länk muspekaren är över */
   background-color: #3DBBCB;
   color: #1A1F3C;
 }
 
-.sitenav { /* Inom-sidan navigering, ska ligga högst upp till höger i varje sektion */
-  position: absolute;
-  top: 4em;
-  right: 0;
+.sitenav { /* Inom-sidan navigering, ska ligga nere till höger  */
+  position: fixed;
+  bottom: 4em;
+  right: 2em;
+  font-size: 130%;
 }
 .sitenav a:link {
   text-decoration: none;
+  display: block;
+  padding: 1em;
   color: #1A1F3C;
 }
 .sitenav a:hover { /* märk ut länken med bakgrundsfärg när du hobrar */
@@ -111,6 +115,7 @@ section { /* för att kunna flytta element inom sektioner med position:absolute 
 
 #video h2 {
   text-align: left;
+  display: none; /* Göm rubriken, den behöver inte synas */
 }
 /* -------------------------------------------------*/
 /** Kod för att styla element i panelen för APPEN  **/
