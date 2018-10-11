@@ -74,7 +74,6 @@ nav ul li a { /* Gör länkarna till klickbara lådor av rätt storlek, text i m
 nav ul li a:hover { /* Spegla färgerna för att markera vilken länk muspekaren är över */
   background-color: #3DBBCB;
   color: #1A1F3C;
-  border: solid 1px #1A1F3C;
 }
 
 .sitenav { /* Inom-sidan navigering, ska ligga högst upp till höger i varje sektion */
@@ -208,6 +207,9 @@ footer #kontakt {
 #kontakt h3 {
   margin-top: 0;
   padding-top: 0;
+}
+#kontakt p {
+  font-size: 16px;
 }
 #kontakt a {
   padding: 1em;
